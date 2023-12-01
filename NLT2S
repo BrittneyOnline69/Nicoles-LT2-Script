@@ -1,0 +1,1102 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local LT2OwnerGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Locations = Instance.new("ScrollingFrame")
+local Spawn = Instance.new("TextButton")
+local LandStore = Instance.new("TextButton")
+local Dock = Instance.new("TextButton")
+local WoodRUs = Instance.new("TextButton")
+local Cave = Instance.new("TextButton")
+local Swamp = Instance.new("TextButton")
+local Volcano = Instance.new("TextButton")
+local FancyFurnishings = Instance.new("TextButton")
+local FineArtsShop = Instance.new("TextButton")
+local BoxedCars = Instance.new("TextButton")
+local ShrineofSight = Instance.new("TextButton")
+local BobsShack = Instance.new("TextButton")
+local LinksLogic = Instance.new("TextButton")
+local PalmIsland = Instance.new("TextButton")
+local Rukaxe = Instance.new("TextButton")
+local EndTimes = Instance.new("TextButton")
+local PSelected = Instance.new("TextLabel")
+local LocSelected = Instance.new("TextLabel")
+local Cls = Instance.new("TextButton")
+local TpToPlr = Instance.new("TextButton")
+local TpToLoc = Instance.new("TextButton")
+local TpToPlot = Instance.new("TextButton")
+local TpToPlrsPlot = Instance.new("TextButton")
+local BringWood = Instance.new("TextButton")
+local SellPlanks = Instance.new("TextButton")
+local SellWood = Instance.new("TextButton")
+local Players = Instance.new("Frame")
+local P1 = Instance.new("TextButton")
+local P2 = Instance.new("TextButton")
+local P3 = Instance.new("TextButton")
+local P4 = Instance.new("TextButton")
+local P5 = Instance.new("TextButton")
+local P6 = Instance.new("TextButton")
+local GiveOwnerGui = Instance.new("TextButton")
+local RemoveOwnerGui = Instance.new("TextButton")
+local RemoveAdminGui = Instance.new("TextButton")
+local GiveAdminGui = Instance.new("TextButton")
+local Main_Passcode = Instance.new("Frame")
+local Enter = Instance.new("TextButton")
+local Passcode = Instance.new("TextBox")
+local Close = Instance.new("TextButton")
+local know = Instance.new("TextButton")
+local Reset = Instance.new("TextButton")
+local Title_2 = Instance.new("TextLabel")
+local Title2 = Instance.new("TextLabel")
+local LT2_Owner_Gui_Open = Instance.new("ScreenGui")
+local Open = Instance.new("TextButton")
+
+--Properties:
+
+LT2OwnerGui.Name = "LT2OwnerGui"
+LT2OwnerGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Main.Name = "Main"
+Main.Parent = LT2OwnerGui
+Main.Active = true
+Main.BackgroundColor3 = Color3.fromRGB(34, 255, 12)
+Main.BorderSizePixel = 5
+Main.Draggable = true
+Main.Position = UDim2.new(-2, 0, 0.263999999, 0)
+Main.Selectable = true
+Main.Size = UDim2.new(0, 628, 0, 509)
+
+Title.Name = "Title"
+Title.Parent = Main
+Title.BackgroundColor3 = Color3.fromRGB(53, 242, 42)
+Title.Size = UDim2.new(0, 628, 0, 35)
+Title.Font = Enum.Font.Code
+Title.Text = "LT2 Owner Gui"
+Title.TextColor3 = Color3.fromRGB(251, 251, 251)
+Title.TextScaled = true
+Title.TextSize = 18.000
+Title.TextStrokeTransparency = 0.000
+Title.TextWrapped = true
+
+Locations.Name = "Locations"
+Locations.Parent = Main
+Locations.BackgroundColor3 = Color3.fromRGB(27, 173, 3)
+Locations.Position = UDim2.new(0, 140, 0, 159)
+Locations.Size = UDim2.new(0, 327, 0, 57)
+Locations.CanvasSize = UDim2.new(1, 200, 0, 0)
+Locations.ScrollBarThickness = 6
+
+Spawn.Name = "Spawn"
+Spawn.Parent = Locations
+Spawn.BackgroundColor3 = Color3.fromRGB(27, 173, 3)
+Spawn.Size = UDim2.new(0, 100, 0, 25)
+Spawn.Font = Enum.Font.Code
+Spawn.Text = "Spawn"
+Spawn.TextScaled = true
+Spawn.TextSize = 12.000
+Spawn.TextWrapped = true
+
+LandStore.Name = "Land Store"
+LandStore.Parent = Locations
+LandStore.BackgroundColor3 = Color3.fromRGB(27, 173, 3)
+LandStore.Position = UDim2.new(0, 0, 0, 25)
+LandStore.Size = UDim2.new(0, 100, 0, 25)
+LandStore.Font = Enum.Font.Code
+LandStore.Text = "Land Store"
+LandStore.TextScaled = true
+LandStore.TextSize = 12.000
+LandStore.TextWrapped = true
+
+Dock.Name = "Dock"
+Dock.Parent = Locations
+Dock.BackgroundColor3 = Color3.fromRGB(27, 173, 3)
+Dock.Position = UDim2.new(0, 100, 0, 25)
+Dock.Size = UDim2.new(0, 100, 0, 25)
+Dock.Font = Enum.Font.Code
+Dock.Text = "Dock"
+Dock.TextScaled = true
+Dock.TextSize = 12.000
+Dock.TextWrapped = true
+
+WoodRUs.Name = "Wood R Us"
+WoodRUs.Parent = Locations
+WoodRUs.BackgroundColor3 = Color3.fromRGB(27, 173, 3)
+WoodRUs.Position = UDim2.new(0, 100, 0, 0)
+WoodRUs.Size = UDim2.new(0, 100, 0, 25)
+WoodRUs.Font = Enum.Font.Code
+WoodRUs.Text = "Wood R Us"
+WoodRUs.TextScaled = true
+WoodRUs.TextSize = 12.000
+WoodRUs.TextWrapped = true
+
+Cave.Name = "Cave"
+Cave.Parent = Locations
+Cave.BackgroundColor3 = Color3.fromRGB(27, 173, 3)
+Cave.Position = UDim2.new(0, 200, 0, 25)
+Cave.Size = UDim2.new(0, 100, 0, 25)
+Cave.Font = Enum.Font.Code
+Cave.Text = "Cave"
+Cave.TextScaled = true
+Cave.TextSize = 12.000
+Cave.TextWrapped = true
+
+Swamp.Name = "Swamp"
+Swamp.Parent = Locations
+Swamp.BackgroundColor3 = Color3.fromRGB(27, 173, 3)
+Swamp.Position = UDim2.new(0, 300, 0, 25)
+Swamp.Size = UDim2.new(0, 100, 0, 25)
+Swamp.Font = Enum.Font.Code
+Swamp.Text = "Swamp"
+Swamp.TextScaled = true
+Swamp.TextSize = 12.000
+Swamp.TextWrapped = true
+
+Volcano.Name = "Volcano"
+Volcano.Parent = Locations
+Volcano.BackgroundColor3 = Color3.fromRGB(27, 173, 3)
+Volcano.Position = UDim2.new(0, 300, 0, 0)
+Volcano.Size = UDim2.new(0, 100, 0, 25)
+Volcano.Font = Enum.Font.Code
+Volcano.Text = "Volcano"
+Volcano.TextScaled = true
+Volcano.TextSize = 12.000
+Volcano.TextWrapped = true
+
+FancyFurnishings.Name = "Fancy Furnishings"
+FancyFurnishings.Parent = Locations
+FancyFurnishings.BackgroundColor3 = Color3.fromRGB(27, 173, 3)
+FancyFurnishings.Position = UDim2.new(0, 400, 0, 25)
+FancyFurnishings.Size = UDim2.new(0, 100, 0, 25)
+FancyFurnishings.Font = Enum.Font.Code
+FancyFurnishings.Text = "Fancy Furnishings"
+FancyFurnishings.TextScaled = true
+FancyFurnishings.TextSize = 12.000
+FancyFurnishings.TextWrapped = true
+
+FineArtsShop.Name = "Fine Arts Shop"
+FineArtsShop.Parent = Locations
+FineArtsShop.BackgroundColor3 = Color3.fromRGB(27, 173, 3)
+FineArtsShop.Position = UDim2.new(0, 500, 0, 25)
+FineArtsShop.Size = UDim2.new(0, 100, 0, 25)
+FineArtsShop.Font = Enum.Font.Code
+FineArtsShop.Text = "Fine Arts Shop"
+FineArtsShop.TextScaled = true
+FineArtsShop.TextSize = 12.000
+FineArtsShop.TextWrapped = true
+
+BoxedCars.Name = "Boxed Cars"
+BoxedCars.Parent = Locations
+BoxedCars.BackgroundColor3 = Color3.fromRGB(27, 173, 3)
+BoxedCars.Position = UDim2.new(0, 500, 0, 0)
+BoxedCars.Size = UDim2.new(0, 100, 0, 25)
+BoxedCars.Font = Enum.Font.Code
+BoxedCars.Text = "Boxed Cars"
+BoxedCars.TextScaled = true
+BoxedCars.TextSize = 12.000
+BoxedCars.TextWrapped = true
+
+ShrineofSight.Name = "Shrine of Sight"
+ShrineofSight.Parent = Locations
+ShrineofSight.BackgroundColor3 = Color3.fromRGB(27, 173, 3)
+ShrineofSight.Position = UDim2.new(0, 600, 0, 25)
+ShrineofSight.Size = UDim2.new(0, 100, 0, 25)
+ShrineofSight.Font = Enum.Font.Code
+ShrineofSight.Text = "Shrine of Sight"
+ShrineofSight.TextScaled = true
+ShrineofSight.TextSize = 12.000
+ShrineofSight.TextWrapped = true
+
+BobsShack.Name = "Bob's Shack"
+BobsShack.Parent = Locations
+BobsShack.BackgroundColor3 = Color3.fromRGB(27, 173, 3)
+BobsShack.Position = UDim2.new(0, 600, 0, 0)
+BobsShack.Size = UDim2.new(0, 100, 0, 25)
+BobsShack.Font = Enum.Font.Code
+BobsShack.Text = "Bob's Shack"
+BobsShack.TextScaled = true
+BobsShack.TextSize = 12.000
+BobsShack.TextWrapped = true
+
+LinksLogic.Name = "Link's Logic"
+LinksLogic.Parent = Locations
+LinksLogic.BackgroundColor3 = Color3.fromRGB(27, 173, 3)
+LinksLogic.Position = UDim2.new(0, 200, 0, 0)
+LinksLogic.Size = UDim2.new(0, 100, 0, 25)
+LinksLogic.Font = Enum.Font.Code
+LinksLogic.Text = "Link's Logic"
+LinksLogic.TextScaled = true
+LinksLogic.TextSize = 12.000
+LinksLogic.TextWrapped = true
+
+PalmIsland.Name = "Palm Island"
+PalmIsland.Parent = Locations
+PalmIsland.BackgroundColor3 = Color3.fromRGB(27, 173, 3)
+PalmIsland.Position = UDim2.new(0, 400, 0, 0)
+PalmIsland.Size = UDim2.new(0, 100, 0, 25)
+PalmIsland.Font = Enum.Font.Code
+PalmIsland.Text = "Palm Island"
+PalmIsland.TextScaled = true
+PalmIsland.TextSize = 12.000
+PalmIsland.TextWrapped = true
+
+Rukaxe.Name = "Rukaxe"
+Rukaxe.Parent = Locations
+Rukaxe.BackgroundColor3 = Color3.fromRGB(27, 173, 3)
+Rukaxe.Position = UDim2.new(0, 700, 0, 25)
+Rukaxe.Size = UDim2.new(0, 100, 0, 25)
+Rukaxe.Font = Enum.Font.Code
+Rukaxe.Text = "Rukiry Axe"
+Rukaxe.TextScaled = true
+Rukaxe.TextSize = 12.000
+Rukaxe.TextWrapped = true
+
+EndTimes.Name = "End Times"
+EndTimes.Parent = Locations
+EndTimes.BackgroundColor3 = Color3.fromRGB(27, 173, 3)
+EndTimes.Position = UDim2.new(0, 700, 0, 0)
+EndTimes.Size = UDim2.new(0, 100, 0, 25)
+EndTimes.Font = Enum.Font.Code
+EndTimes.Text = "End Times"
+EndTimes.TextScaled = true
+EndTimes.TextSize = 12.000
+EndTimes.TextWrapped = true
+
+PSelected.Name = "PSelected"
+PSelected.Parent = Main
+PSelected.BackgroundColor3 = Color3.fromRGB(251, 0, 252)
+PSelected.Position = UDim2.new(0, 247, 0, 250)
+PSelected.Size = UDim2.new(0, 150, 0, 30)
+PSelected.Font = Enum.Font.Cartoon
+PSelected.Text = "No player selected"
+PSelected.TextSize = 16.000
+
+LocSelected.Name = "LocSelected"
+LocSelected.Parent = Main
+LocSelected.BackgroundColor3 = Color3.fromRGB(251, 0, 252)
+LocSelected.Position = UDim2.new(0, 247, 0, 111)
+LocSelected.Size = UDim2.new(0, 150, 0, 30)
+LocSelected.Font = Enum.Font.Cartoon
+LocSelected.Text = "No location selected"
+LocSelected.TextSize = 16.000
+
+Cls.Name = "Cls"
+Cls.Parent = Main
+Cls.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Cls.BackgroundTransparency = 1.000
+Cls.Position = UDim2.new(0, 592, 0, -7)
+Cls.Size = UDim2.new(0, 43, 0, 48)
+Cls.Font = Enum.Font.Cartoon
+Cls.Text = "X"
+Cls.TextColor3 = Color3.fromRGB(255, 51, 10)
+Cls.TextScaled = true
+Cls.TextSize = 24.000
+Cls.TextWrapped = true
+
+TpToPlr.Name = "TpToPlr"
+TpToPlr.Parent = Main
+TpToPlr.BackgroundColor3 = Color3.fromRGB(92, 219, 255)
+TpToPlr.Position = UDim2.new(0, 504, 0, 250)
+TpToPlr.Size = UDim2.new(0, 100, 0, 30)
+TpToPlr.Font = Enum.Font.Cartoon
+TpToPlr.Text = "Teleport to Player"
+TpToPlr.TextSize = 12.000
+
+TpToLoc.Name = "TpToLoc"
+TpToLoc.Parent = Main
+TpToLoc.BackgroundColor3 = Color3.fromRGB(92, 219, 255)
+TpToLoc.Position = UDim2.new(0, 32, 0, 250)
+TpToLoc.Size = UDim2.new(0, 100, 0, 30)
+TpToLoc.Font = Enum.Font.Cartoon
+TpToLoc.Text = "Teleport To Location"
+TpToLoc.TextSize = 11.000
+
+TpToPlot.Name = "TpToPlot"
+TpToPlot.Parent = Main
+TpToPlot.BackgroundColor3 = Color3.fromRGB(255, 252, 10)
+TpToPlot.Position = UDim2.new(0, 32, 0, 53)
+TpToPlot.Size = UDim2.new(0, 125, 0, 30)
+TpToPlot.Font = Enum.Font.Cartoon
+TpToPlot.Text = "Teleport to your Plot"
+TpToPlot.TextSize = 12.000
+
+TpToPlrsPlot.Name = "TpToPlrsPlot"
+TpToPlrsPlot.Parent = Main
+TpToPlrsPlot.BackgroundColor3 = Color3.fromRGB(255, 252, 10)
+TpToPlrsPlot.Position = UDim2.new(0, 487, 0, 53)
+TpToPlrsPlot.Size = UDim2.new(0, 125, 0, 30)
+TpToPlrsPlot.Font = Enum.Font.Cartoon
+TpToPlrsPlot.Text = "Teleport to player's Plot"
+TpToPlrsPlot.TextSize = 11.000
+
+BringWood.Name = "BringWood"
+BringWood.Parent = Main
+BringWood.BackgroundColor3 = Color3.fromRGB(150, 0, 255)
+BringWood.Position = UDim2.new(0, 78, 0, 389)
+BringWood.Size = UDim2.new(0, 125, 0, 30)
+BringWood.Font = Enum.Font.Cartoon
+BringWood.Text = "Bring Wood"
+BringWood.TextScaled = true
+BringWood.TextSize = 11.000
+BringWood.TextWrapped = true
+
+SellPlanks.Name = "SellPlanks"
+SellPlanks.Parent = Main
+SellPlanks.BackgroundColor3 = Color3.fromRGB(8, 81, 255)
+SellPlanks.Position = UDim2.new(0, 263, 0, 389)
+SellPlanks.Size = UDim2.new(0, 125, 0, 30)
+SellPlanks.Font = Enum.Font.Cartoon
+SellPlanks.Text = "Sell Planks"
+SellPlanks.TextScaled = true
+SellPlanks.TextSize = 11.000
+SellPlanks.TextWrapped = true
+
+SellWood.Name = "SellWood"
+SellWood.Parent = Main
+SellWood.BackgroundColor3 = Color3.fromRGB(254, 255, 39)
+SellWood.Position = UDim2.new(0, 467, 0, 389)
+SellWood.Size = UDim2.new(0, 125, 0, 30)
+SellWood.Font = Enum.Font.Cartoon
+SellWood.Text = "Sell Wood"
+SellWood.TextScaled = true
+SellWood.TextSize = 11.000
+SellWood.TextWrapped = true
+
+Players.Name = "Players"
+Players.Parent = Main
+Players.BackgroundColor3 = Color3.fromRGB(27, 173, 3)
+Players.Position = UDim2.new(0, 148, 0, 295)
+Players.Size = UDim2.new(0, 347, 0, 63)
+
+P1.Name = "P1"
+P1.Parent = Players
+P1.BackgroundColor3 = Color3.fromRGB(252, 0, 34)
+P1.Size = UDim2.new(0, 115, 0, 30)
+P1.Font = Enum.Font.Cartoon
+P1.Text = "64savage64"
+P1.TextColor3 = Color3.fromRGB(255, 255, 255)
+P1.TextSize = 14.000
+
+P2.Name = "P2"
+P2.Parent = Players
+P2.BackgroundColor3 = Color3.fromRGB(252, 0, 34)
+P2.Position = UDim2.new(0, 116, 0, 0)
+P2.Size = UDim2.new(0, 115, 0, 30)
+P2.Visible = false
+P2.Font = Enum.Font.Cartoon
+P2.Text = ""
+P2.TextColor3 = Color3.fromRGB(255, 255, 255)
+P2.TextSize = 14.000
+
+P3.Name = "P3"
+P3.Parent = Players
+P3.BackgroundColor3 = Color3.fromRGB(252, 0, 34)
+P3.Position = UDim2.new(0, 232, 0, 0)
+P3.Size = UDim2.new(0, 115, 0, 30)
+P3.Visible = false
+P3.Font = Enum.Font.Cartoon
+P3.Text = ""
+P3.TextColor3 = Color3.fromRGB(255, 255, 255)
+P3.TextSize = 14.000
+
+P4.Name = "P4"
+P4.Parent = Players
+P4.BackgroundColor3 = Color3.fromRGB(252, 0, 34)
+P4.Position = UDim2.new(0, 232, 0, 32)
+P4.Size = UDim2.new(0, 115, 0, 30)
+P4.Visible = false
+P4.Font = Enum.Font.Cartoon
+P4.Text = ""
+P4.TextColor3 = Color3.fromRGB(255, 255, 255)
+P4.TextSize = 14.000
+
+P5.Name = "P5"
+P5.Parent = Players
+P5.BackgroundColor3 = Color3.fromRGB(252, 0, 34)
+P5.Position = UDim2.new(0, 116, 0, 32)
+P5.Size = UDim2.new(0, 115, 0, 30)
+P5.Visible = false
+P5.Font = Enum.Font.Cartoon
+P5.Text = ""
+P5.TextColor3 = Color3.fromRGB(255, 255, 255)
+P5.TextSize = 14.000
+
+P6.Name = "P6"
+P6.Parent = Players
+P6.BackgroundColor3 = Color3.fromRGB(252, 0, 34)
+P6.Position = UDim2.new(0, 0, 0, 32)
+P6.Size = UDim2.new(0, 115, 0, 30)
+P6.Visible = false
+P6.Font = Enum.Font.Cartoon
+P6.Text = ""
+P6.TextColor3 = Color3.fromRGB(255, 255, 255)
+P6.TextSize = 14.000
+
+GiveOwnerGui.Name = "GiveOwnerGui"
+GiveOwnerGui.Parent = Main
+GiveOwnerGui.BackgroundColor3 = Color3.fromRGB(32, 183, 3)
+GiveOwnerGui.Position = UDim2.new(0, 24, 0, 441)
+GiveOwnerGui.Size = UDim2.new(0, 290, 0, 30)
+GiveOwnerGui.Font = Enum.Font.ArialBold
+GiveOwnerGui.Text = "Give Player Owner Gui"
+GiveOwnerGui.TextScaled = true
+GiveOwnerGui.TextSize = 11.000
+GiveOwnerGui.TextWrapped = true
+
+RemoveOwnerGui.Name = "RemoveOwnerGui"
+RemoveOwnerGui.Parent = Main
+RemoveOwnerGui.BackgroundColor3 = Color3.fromRGB(252, 0, 10)
+RemoveOwnerGui.Position = UDim2.new(0, 24, 0, 471)
+RemoveOwnerGui.Size = UDim2.new(0, 290, 0, 30)
+RemoveOwnerGui.Font = Enum.Font.ArialBold
+RemoveOwnerGui.Text = "Remove Player Owner Gui"
+RemoveOwnerGui.TextScaled = true
+RemoveOwnerGui.TextSize = 11.000
+RemoveOwnerGui.TextWrapped = true
+
+RemoveAdminGui.Name = "RemoveAdminGui"
+RemoveAdminGui.Parent = Main
+RemoveAdminGui.BackgroundColor3 = Color3.fromRGB(252, 0, 10)
+RemoveAdminGui.Position = UDim2.new(0, 330, 0, 471)
+RemoveAdminGui.Size = UDim2.new(0, 290, 0, 30)
+RemoveAdminGui.Font = Enum.Font.ArialBold
+RemoveAdminGui.Text = "Remove Player Admin Gui"
+RemoveAdminGui.TextScaled = true
+RemoveAdminGui.TextSize = 11.000
+RemoveAdminGui.TextWrapped = true
+
+GiveAdminGui.Name = "GiveAdminGui"
+GiveAdminGui.Parent = Main
+GiveAdminGui.BackgroundColor3 = Color3.fromRGB(32, 183, 3)
+GiveAdminGui.Position = UDim2.new(0, 330, 0, 441)
+GiveAdminGui.Size = UDim2.new(0, 290, 0, 30)
+GiveAdminGui.Font = Enum.Font.ArialBold
+GiveAdminGui.Text = "Give Player Admin Gui"
+GiveAdminGui.TextScaled = true
+GiveAdminGui.TextSize = 11.000
+GiveAdminGui.TextWrapped = true
+
+Main_Passcode.Name = "Main_Passcode"
+Main_Passcode.Parent = LT2OwnerGui
+Main_Passcode.Active = true
+Main_Passcode.BackgroundColor3 = Color3.fromRGB(34, 255, 12)
+Main_Passcode.BorderSizePixel = 5
+Main_Passcode.Draggable = true
+Main_Passcode.Position = UDim2.new(-2, 0, 0.263999999, 0)
+Main_Passcode.Selectable = true
+Main_Passcode.Size = UDim2.new(0, 628, 0, 361)
+
+Enter.Name = "Enter"
+Enter.Parent = Main_Passcode
+Enter.BackgroundColor3 = Color3.fromRGB(34, 181, 239)
+Enter.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Enter.BorderSizePixel = 0
+Enter.Position = UDim2.new(0.138535038, 0, 0.773606777, 0)
+Enter.Size = UDim2.new(0, 226, 0, 37)
+Enter.Font = Enum.Font.ArialBold
+Enter.Text = "Enter"
+Enter.TextColor3 = Color3.fromRGB(0, 0, 0)
+Enter.TextScaled = true
+Enter.TextSize = 14.000
+Enter.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Enter.TextStrokeTransparency = 0.000
+Enter.TextWrapped = true
+
+Passcode.Name = "Passcode"
+Passcode.Parent = Main_Passcode
+Passcode.BackgroundColor3 = Color3.fromRGB(23, 175, 7)
+Passcode.BorderSizePixel = 0
+Passcode.Position = UDim2.new(0.138535038, 0, 0.556784272, 0)
+Passcode.Size = UDim2.new(0, 226, 0, 78)
+Passcode.Font = Enum.Font.ArialBold
+Passcode.Text = "Passcode..."
+Passcode.TextColor3 = Color3.fromRGB(0, 0, 0)
+Passcode.TextScaled = true
+Passcode.TextSize = 14.000
+Passcode.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Passcode.TextStrokeTransparency = 0.000
+Passcode.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = Main_Passcode
+Close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Close.BorderColor3 = Color3.fromRGB(252, 0, 0)
+Close.BorderSizePixel = 5
+Close.NextSelectionDown = Title_2
+Close.Position = UDim2.new(0.925159216, 0, 0, 0)
+Close.Size = UDim2.new(0, 47, 0, 45)
+Close.Font = Enum.Font.ArialBold
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextSize = 50.000
+Close.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextStrokeTransparency = 0.000
+Close.TextWrapped = true
+
+know.Name = "know"
+know.Parent = Main_Passcode
+know.BackgroundColor3 = Color3.fromRGB(23, 175, 7)
+know.BorderColor3 = Color3.fromRGB(27, 42, 53)
+know.BorderSizePixel = 0
+know.Position = UDim2.new(0.565286636, 0, 0.556786716, 0)
+know.Size = UDim2.new(0, 226, 0, 79)
+know.Font = Enum.Font.ArialBold
+know.Text = "I already did the passcode"
+know.TextColor3 = Color3.fromRGB(0, 0, 0)
+know.TextScaled = true
+know.TextSize = 14.000
+know.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+know.TextStrokeTransparency = 0.000
+know.TextWrapped = true
+
+Reset.Name = "Reset"
+Reset.Parent = Main_Passcode
+Reset.BackgroundColor3 = Color3.fromRGB(34, 181, 239)
+Reset.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Reset.BorderSizePixel = 0
+Reset.Position = UDim2.new(0.565286636, 0, 0.773606777, 0)
+Reset.Size = UDim2.new(0, 226, 0, 37)
+Reset.Font = Enum.Font.ArialBold
+Reset.Text = "Reset"
+Reset.TextColor3 = Color3.fromRGB(0, 0, 0)
+Reset.TextScaled = true
+Reset.TextSize = 14.000
+Reset.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Reset.TextStrokeTransparency = 0.000
+Reset.TextWrapped = true
+
+Title_2.Name = "Title"
+Title_2.Parent = Main_Passcode
+Title_2.BackgroundColor3 = Color3.fromRGB(44, 201, 36)
+Title_2.BackgroundTransparency = 1.000
+Title_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Title_2.BorderSizePixel = 0
+Title_2.Position = UDim2.new(0, 0, 0.149584487, 0)
+Title_2.Size = UDim2.new(0, 628, 0, 105)
+Title_2.Font = Enum.Font.Code
+Title_2.Text = "Enter Passcode"
+Title_2.TextColor3 = Color3.fromRGB(251, 251, 251)
+Title_2.TextScaled = true
+Title_2.TextSize = 18.000
+Title_2.TextStrokeTransparency = 0.000
+Title_2.TextWrapped = true
+
+Title2.Name = "Title2"
+Title2.Parent = Main_Passcode
+Title2.BackgroundColor3 = Color3.fromRGB(44, 201, 36)
+Title2.BackgroundTransparency = 1.000
+Title2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Title2.BorderSizePixel = 0
+Title2.Position = UDim2.new(0.202229306, 0, 0, 0)
+Title2.Size = UDim2.new(0, 407, 0, 51)
+Title2.Font = Enum.Font.Code
+Title2.Text = "Lumber Tycoon 3 Owner GUI"
+Title2.TextColor3 = Color3.fromRGB(251, 251, 251)
+Title2.TextScaled = true
+Title2.TextSize = 18.000
+Title2.TextStrokeTransparency = 0.000
+Title2.TextWrapped = true
+
+LT2_Owner_Gui_Open.Name = "LT2_Owner_Gui_Open"
+LT2_Owner_Gui_Open.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Open.Name = "Open"
+Open.Parent = LT2_Owner_Gui_Open
+Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Open.Position = UDim2.new(0, 0, 0.420576453, 0)
+Open.Size = UDim2.new(0, 173, 0, 42)
+Open.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+Open.Font = Enum.Font.Arial
+Open.Text = "Nicoles LT2 Script"
+Open.TextColor3 = Color3.fromRGB(0, 0, 0)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextWrapped = true
+
+-- Scripts:
+
+local function IKJUX_fake_script() -- Spawn.LocalScript 
+	local script = Instance.new('LocalScript', Spawn)
+
+	script.Parent.MouseButton1Down:connect(function()
+	      script.Parent.Parent.Parent.LocSelected.Text = script.Parent.Name
+	    end)
+end
+coroutine.wrap(IKJUX_fake_script)()
+local function CPDSO_fake_script() -- LandStore.LocalScript 
+	local script = Instance.new('LocalScript', LandStore)
+
+	script.Parent.MouseButton1Down:connect(function()
+	      script.Parent.Parent.Parent.LocSelected.Text = script.Parent.Name
+	    end)
+end
+coroutine.wrap(CPDSO_fake_script)()
+local function KLPE_fake_script() -- Dock.LocalScript 
+	local script = Instance.new('LocalScript', Dock)
+
+	script.Parent.MouseButton1Down:connect(function()
+	      script.Parent.Parent.Parent.LocSelected.Text = script.Parent.Name
+	    end)
+end
+coroutine.wrap(KLPE_fake_script)()
+local function UABPM_fake_script() -- WoodRUs.LocalScript 
+	local script = Instance.new('LocalScript', WoodRUs)
+
+	script.Parent.MouseButton1Down:connect(function()
+	      script.Parent.Parent.Parent.LocSelected.Text = script.Parent.Name
+	    end)
+end
+coroutine.wrap(UABPM_fake_script)()
+local function NYCY_fake_script() -- Cave.LocalScript 
+	local script = Instance.new('LocalScript', Cave)
+
+	script.Parent.MouseButton1Down:connect(function()
+	      script.Parent.Parent.Parent.LocSelected.Text = script.Parent.Name
+	    end)
+end
+coroutine.wrap(NYCY_fake_script)()
+local function OTKUVO_fake_script() -- Swamp.LocalScript 
+	local script = Instance.new('LocalScript', Swamp)
+
+	script.Parent.MouseButton1Down:connect(function()
+	      script.Parent.Parent.Parent.LocSelected.Text = script.Parent.Name
+	    end)
+end
+coroutine.wrap(OTKUVO_fake_script)()
+local function YTEHG_fake_script() -- Volcano.LocalScript 
+	local script = Instance.new('LocalScript', Volcano)
+
+	script.Parent.MouseButton1Down:connect(function()
+	      script.Parent.Parent.Parent.LocSelected.Text = script.Parent.Name
+	    end)
+end
+coroutine.wrap(YTEHG_fake_script)()
+local function NWHARDS_fake_script() -- FancyFurnishings.LocalScript 
+	local script = Instance.new('LocalScript', FancyFurnishings)
+
+	script.Parent.MouseButton1Down:connect(function()
+	      script.Parent.Parent.Parent.LocSelected.Text = script.Parent.Name
+	    end)
+end
+coroutine.wrap(NWHARDS_fake_script)()
+local function ITLTUV_fake_script() -- FineArtsShop.LocalScript 
+	local script = Instance.new('LocalScript', FineArtsShop)
+
+	script.Parent.MouseButton1Down:connect(function()
+	      script.Parent.Parent.Parent.LocSelected.Text = script.Parent.Name
+	    end)
+end
+coroutine.wrap(ITLTUV_fake_script)()
+local function YAPATF_fake_script() -- BoxedCars.LocalScript 
+	local script = Instance.new('LocalScript', BoxedCars)
+
+	script.Parent.MouseButton1Down:connect(function()
+	      script.Parent.Parent.Parent.LocSelected.Text = script.Parent.Name
+	    end)
+end
+coroutine.wrap(YAPATF_fake_script)()
+local function EMHFXZN_fake_script() -- ShrineofSight.LocalScript 
+	local script = Instance.new('LocalScript', ShrineofSight)
+
+	script.Parent.MouseButton1Down:connect(function()
+	      script.Parent.Parent.Parent.LocSelected.Text = script.Parent.Name
+	    end)
+end
+coroutine.wrap(EMHFXZN_fake_script)()
+local function QWEFK_fake_script() -- BobsShack.LocalScript 
+	local script = Instance.new('LocalScript', BobsShack)
+
+	script.Parent.MouseButton1Down:connect(function()
+	      script.Parent.Parent.Parent.LocSelected.Text = script.Parent.Name
+	    end)
+end
+coroutine.wrap(QWEFK_fake_script)()
+local function EPNM_fake_script() -- LinksLogic.LocalScript 
+	local script = Instance.new('LocalScript', LinksLogic)
+
+	script.Parent.MouseButton1Down:connect(function()
+	      script.Parent.Parent.Parent.LocSelected.Text = script.Parent.Name
+	    end)
+end
+coroutine.wrap(EPNM_fake_script)()
+local function NBTY_fake_script() -- PalmIsland.LocalScript 
+	local script = Instance.new('LocalScript', PalmIsland)
+
+	script.Parent.MouseButton1Down:connect(function()
+	      script.Parent.Parent.Parent.LocSelected.Text = script.Parent.Name
+	    end)
+end
+coroutine.wrap(NBTY_fake_script)()
+local function WKWZN_fake_script() -- Rukaxe.LocalScript 
+	local script = Instance.new('LocalScript', Rukaxe)
+
+	script.Parent.MouseButton1Down:connect(function()
+	      script.Parent.Parent.Parent.LocSelected.Text = script.Parent.Name
+	    end)
+end
+coroutine.wrap(WKWZN_fake_script)()
+local function PNDCO_fake_script() -- EndTimes.LocalScript 
+	local script = Instance.new('LocalScript', EndTimes)
+
+	script.Parent.MouseButton1Down:connect(function()
+	      script.Parent.Parent.Parent.LocSelected.Text = script.Parent.Name
+	    end)
+end
+coroutine.wrap(PNDCO_fake_script)()
+local function TVINKIG_fake_script() -- Cls.LocalScript 
+	local script = Instance.new('LocalScript', Cls)
+
+	local move = script.Parent.Parent.Parent:WaitForChild("Main")
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		move:TweenPosition(UDim2.new(-2, 0,0.264, 0), 'Out', 'Bounce', 1)
+	script.Parent.Parent.LocSelected.Text = "No location selected"
+	script.Parent.Parent.PSelected.Text = "No player selected"
+	end)
+end
+coroutine.wrap(TVINKIG_fake_script)()
+local function KHIEQH_fake_script() -- TpToPlr.LocalScript 
+	local script = Instance.new('LocalScript', TpToPlr)
+
+	script.Parent.MouseButton1Down:connect(function()
+	      if script.Parent.Parent.PSelected.Text == "No player selected" then
+	        warn("No Player Selected")
+	      else
+	        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace[script.Parent.Parent.PSelected.Text].HumanoidRootPart.CFrame
+	      end
+	    end)
+end
+coroutine.wrap(KHIEQH_fake_script)()
+local function LJCJH_fake_script() -- TpToLoc.LocalScript 
+	local script = Instance.new('LocalScript', TpToLoc)
+
+	    local Locations = {
+		  ["Rukaxe"] = Vector3.new(334, 51, 1958),
+	      ["Spawn"] = Vector3.new(155, 3, 74),
+	      ["Wood R Us"] = Vector3.new(265, 3, 57),
+	      ["Land Store"] = Vector3.new(258, 3, -99),
+	      ["Dock"] = Vector3.new(1114, -1, -197),
+	      ["Link's Logic"] = Vector3.new(4605, 3, -727),
+	      ["Cave"] = Vector3.new(3581, -179, 430),
+	      ["Volcano"] = Vector3.new(-1585, 622, 1140),
+	      ["Swamp"] = Vector3.new(-1209, 132, -801),
+	      ["Palm Island"] = Vector3.new(2549, -5, -42),
+	      ["Fancy Furnishings"] = Vector3.new(491, 3, -1720),
+	      ["Boxed Cars"] = Vector3.new(509, 3, -1463),
+	      ["Fine Arts Shop"] = Vector3.new(5207, -166, 719),
+	      ["Bob's Shack"] = Vector3.new(260, 8, -2542),
+	      ["Shrine of Sight"] = Vector3.new(-1600, 195, 919),
+		  ["End Times"] = Vector3.new(113.545, -202.526, -1000.256)
+	    }
+	
+	script.Parent.MouseButton1Down:connect(function()
+	      if script.Parent.Parent.LocSelected.Text == "No location selected" then
+	        warn("No Location Selected")
+	      else
+	        game.Players.LocalPlayer.Character:MoveTo(Locations[script.Parent.Parent.LocSelected.Text])
+	      end
+	    end)
+end
+coroutine.wrap(LJCJH_fake_script)()
+local function GETPCO_fake_script() -- TpToPlot.LocalScript 
+	local script = Instance.new('LocalScript', TpToPlot)
+
+	script.Parent.MouseButton1Down:connect(function()
+	      for i, v in pairs(game.Workspace.Properties:GetChildren()) do
+	        if v.Owner.Value == game.Players.LocalPlayer then
+	          game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.OriginSquare.CFrame
+	        end
+	      end
+	    end)
+end
+coroutine.wrap(GETPCO_fake_script)()
+local function BXRQK_fake_script() -- TpToPlrsPlot.LocalScript 
+	local script = Instance.new('LocalScript', TpToPlrsPlot)
+
+	script.Parent.MouseButton1Down:connect(function()
+	      for i, v in pairs(game.Workspace.Properties:GetChildren()) do
+	        if v.Owner.Value == game.Players[script.Parent.Parent.PSelected.Text] then
+	          game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.OriginSquare.CFrame
+	        end
+	      end
+	    end)
+end
+coroutine.wrap(BXRQK_fake_script)()
+local function LFPX_fake_script() -- BringWood.LocalScript 
+	local script = Instance.new('LocalScript', BringWood)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	    for _, Log in pairs(game.Workspace.LogModels:GetChildren()) do
+	        if Log.Name:sub(1, 6) == "Loose_" and Log:findFirstChild("Owner") then
+	            if Log.Owner.Value == game.Players.LocalPlayer then
+	                Log:MoveTo(game.Players.LocalPlayer.Character.HumanoidRootPart.Position + Vector3.new(0, 20, 0))
+	                for i=1,100 do
+	                    game.ReplicatedStorage.Interaction.ClientIsDragging:FireServer(Log)
+	                end
+	            end
+	        end
+	    end
+	end)
+end
+coroutine.wrap(LFPX_fake_script)()
+local function QOFAVC_fake_script() -- SellPlanks.LocalScript 
+	local script = Instance.new('LocalScript', SellPlanks)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for _, Plank in pairs(game.Workspace.PlayerModels:GetChildren()) do
+			if Plank.Name=="Plank" and Plank:findFirstChild("Owner") then
+				if Plank.Owner.Value == game.Players.LocalPlayer then
+					for i,v in pairs(Plank:GetChildren()) do
+						if v.Name=="WoodSection" then
+							spawn(function()
+								for i=1,10 do
+									wait()
+									v.CFrame=CFrame.new(Vector3.new(315, -0.296, 85.791))*CFrame.Angles(math.rad(90),0,0)
+								end
+							end)
+						end
+					end
+					spawn(function()
+						for i=1,20 do
+							wait()
+							game.ReplicatedStorage.Interaction.ClientIsDragging:FireServer(Plank)
+						end
+					end)
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(QOFAVC_fake_script)()
+local function WJUHTP_fake_script() -- SellWood.LocalScript 
+	local script = Instance.new('LocalScript', SellWood)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for _, Log in pairs(game.Workspace.LogModels:GetChildren()) do
+			if Log.Name:sub(1, 6) == "Loose_" and Log:findFirstChild("Owner") then
+				if Log.Owner.Value == game.Players.LocalPlayer then
+					for i,v in pairs(Log:GetChildren()) do
+						if v.Name=="WoodSection" then
+							spawn(function()
+								for i=1,10 do
+									wait()
+									v.CFrame=CFrame.new(Vector3.new(315, -0.296, 85.791))*CFrame.Angles(math.rad(90),0,0)
+								end
+							end)
+						end
+					end
+					spawn(function()
+						for i=1,20 do
+							wait()
+							game.ReplicatedStorage.Interaction.ClientIsDragging:FireServer(Log)
+						end
+					end)
+				end
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(WJUHTP_fake_script)()
+local function HIJNWWP_fake_script() -- P1.LocalScript 
+	local script = Instance.new('LocalScript', P1)
+
+	script.Parent.MouseButton1Down:connect(function()
+	      script.Parent.Parent.Parent.PSelected.Text = script.Parent.Text
+	    end)
+	
+	script.Parent.MouseButton2Click:Connect(function()
+		script.Parent.Parent.Parent.PSelected.Text = "No player selected"
+	end)
+end
+coroutine.wrap(HIJNWWP_fake_script)()
+local function EKNNMCH_fake_script() -- P2.LocalScript 
+	local script = Instance.new('LocalScript', P2)
+
+	script.Parent.MouseButton1Down:connect(function()
+	      script.Parent.Parent.Parent.PSelected.Text = script.Parent.Text
+	    end)
+	
+	script.Parent.MouseButton2Click:Connect(function()
+		script.Parent.Parent.Parent.PSelected.Text = "No player selected"
+	end)
+end
+coroutine.wrap(EKNNMCH_fake_script)()
+local function PCSOK_fake_script() -- P3.LocalScript 
+	local script = Instance.new('LocalScript', P3)
+
+	script.Parent.MouseButton1Down:connect(function()
+	      script.Parent.Parent.Parent.PSelected.Text = script.Parent.Text
+	    end)
+	
+	script.Parent.MouseButton2Click:Connect(function()
+		script.Parent.Parent.Parent.PSelected.Text = "No player selected"
+	end)
+end
+coroutine.wrap(PCSOK_fake_script)()
+local function MLHNTJN_fake_script() -- P4.LocalScript 
+	local script = Instance.new('LocalScript', P4)
+
+	script.Parent.MouseButton1Down:connect(function()
+	      script.Parent.Parent.Parent.PSelected.Text = script.Parent.Text
+	    end)
+	
+	script.Parent.MouseButton2Click:Connect(function()
+		script.Parent.Parent.Parent.PSelected.Text = "No player selected"
+	end)
+end
+coroutine.wrap(MLHNTJN_fake_script)()
+local function NEGGDTG_fake_script() -- P5.LocalScript 
+	local script = Instance.new('LocalScript', P5)
+
+	script.Parent.MouseButton1Down:connect(function()
+	      script.Parent.Parent.Parent.PSelected.Text = script.Parent.Text
+	    end)
+	
+	script.Parent.MouseButton2Click:Connect(function()
+		script.Parent.Parent.Parent.PSelected.Text = "No player selected"
+	end)
+end
+coroutine.wrap(NEGGDTG_fake_script)()
+local function IZFHQ_fake_script() -- P6.LocalScript 
+	local script = Instance.new('LocalScript', P6)
+
+	script.Parent.MouseButton1Down:connect(function()
+	      script.Parent.Parent.Parent.PSelected.Text = script.Parent.Text
+	    end)
+	
+	script.Parent.MouseButton2Click:Connect(function()
+		script.Parent.Parent.Parent.PSelected.Text = "No player selected"
+	end)
+end
+coroutine.wrap(IZFHQ_fake_script)()
+local function ETTNMWK_fake_script() -- Players.LocalScript 
+	local script = Instance.new('LocalScript', Players)
+
+	local buttons = {
+	      script.Parent.P1,
+		  script.Parent.P2,
+		  script.Parent.P3,
+		  script.Parent.P4,
+		  script.Parent.P5,
+		  script.Parent.P6,
+	    }
+	    for i, v in pairs(game.Players:GetChildren()) do
+	      buttons[i].Text = v.Name
+	      buttons[i].Visible = true
+	    end
+	    game.Players.PlayerRemoving:connect(function()
+	      for i, v in pairs(game.Players:GetChildren()) do
+	        buttons[i].Text = v.Name
+	        buttons[i].Visible = true
+	      end
+	    end)
+	    game.Players.PlayerAdded:connect(function()
+	      for i, v in pairs(game.Players:GetChildren()) do
+	        buttons[i].Text = v.Name
+	        buttons[i].Visible = true
+	      end
+	    end)
+end
+coroutine.wrap(ETTNMWK_fake_script)()
+local function HYCSAVU_fake_script() -- Main_Passcode.Main_Script 
+	local script = Instance.new('LocalScript', Main_Passcode)
+
+	local enter = script.Parent.Enter
+	local passcode = script.Parent.Passcode
+	local close = script.Parent.Close
+	local code = "42069xyz"
+	local move = script.Parent.Parent:WaitForChild("Main_Passcode")
+	local move2 = script.Parent.Parent:WaitForChild("Main")
+	local know = script.Parent.know
+	local admin = 1
+	enter.MouseButton1Click:Connect(function()
+		if passcode.Text == code then
+			enter.Text = "Correct!"
+			passcode.Text = ""
+			know.know.Disabled = false
+			know.dont_know.Disabled = true
+			wait(2)
+			enter.Text = "Enter"
+			passcode.Text = "Passcode..."
+			wait(0.1)
+			move:TweenPosition(UDim2.new(-2, 0,0.264, 0), 'Out', 'Bounce', 1)
+			wait(2)
+			move2:TweenPosition(UDim2.new(0.456, 0,0.264, 0), 'Out', 'Bounce', 1)
+			know.know.Disabled = false
+			know.dont_know.Disabled = true
+		else
+			enter.Text = "Incorrect!"
+			know.know.Disabled = true
+			know.dont_know.Disabled = false
+			passcode.Text = ""
+			wait(2)
+			enter.Text = "Enter"
+			passcode.Text = "Passcode..."
+		end
+	end)
+	
+	
+	
+	close.MouseButton1Click:Connect(function()
+		move:TweenPosition(UDim2.new(-2, 0,0.264, 0), 'Out', 'Bounce', 1)
+	end)
+end
+coroutine.wrap(HYCSAVU_fake_script)()
+-- know.know is disabled.
+local function QHERJIP_fake_script() -- know.dont_know 
+	local script = Instance.new('LocalScript', know)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Text = "NO YOU DIDN'T!!!"
+		wait(2)
+		script.Parent.Text = "I already did the passcode"
+	end)
+end
+coroutine.wrap(QHERJIP_fake_script)()
+local function LOIML_fake_script() -- Reset.LocalScript 
+	local script = Instance.new('LocalScript', Reset)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.know.dont_know.Disabled = false
+		script.Parent.Parent.know.know.Disabled = true
+	end)
+end
+coroutine.wrap(LOIML_fake_script)()
+local function ACRQI_fake_script() -- Reset.Owner Only Gui 
+	local script = Instance.new('LocalScript', Reset)
+
+	plr = script.Parent.Parent.Parent
+	admins = {"64savage64"}
+	d = false
+	
+	for i = 1, #admins do
+	if plr.Name == admins[i] then
+	d = true
+	break
+	end
+	end
+	
+	if not d then
+	script.Parent.Visible = false
+	end
+end
+coroutine.wrap(ACRQI_fake_script)()
+-- LT2OwnerGui.Owner_Gui is disabled.
+local function LASAL_fake_script() -- Open.LocalScript 
+	local script = Instance.new('LocalScript', Open)
+
+	local move = script.Parent.Parent.Parent:WaitForChild("LT2OwnerGui").Main_Passcode
+	local move2 = script.Parent.Parent.Parent:WaitForChild("LT2OwnerGui").Main
+	
+	script.Parent.MouseButton1Click:connect(function()
+				move2:TweenPosition(UDim2.new(-0.28, 0,0.264, 0), 'Out', 'Bounce', 1)
+			move:TweenPosition(UDim2.new(0.456, 0,0.264, 0), 'Out', 'Bounce', 1)
+		end)
+end
+coroutine.wrap(LASAL_fake_script)()
+-- LT2_Owner_Gui_Open.Owner_Only_Gui is disabled.
